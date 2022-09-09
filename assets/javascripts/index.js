@@ -15,6 +15,14 @@ const FriendList = [
     address: "Tukmudal",
   },
   {
+    name: "Rizal Rayyan Firdaus",
+    address: "Sumber",
+  },
+  {
+    name: "Adhivia Julian",
+    address: "Ciamis",
+  },
+  {
     name: "Singgih budi purnadi",
     address: "Panguragan",
   },
@@ -29,14 +37,6 @@ const FriendList = [
   {
     name: "Muhammad ridho",
     address: "Ciwaringin",
-  },
-  {
-    name: "Rizal Rayyan Firdaus",
-    address: "Sumber",
-  },
-  {
-    name: "Adhivia Julian",
-    address: "Ciamis",
   },
   {
     name: "Rijal wijaya",
