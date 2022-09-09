@@ -7,7 +7,6 @@
 }
 
 body {
-  margin: 0;
   font-family: "Poppins";
 }
 
@@ -50,10 +49,6 @@ thead {
   color: white;
   background-color: var(--color-add);
   font-family: "Poppins";
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
 }
 
 .button-wrapper button:hover {
@@ -75,4 +70,25 @@ thead {
   cursor: pointer;
   transition: all;
   transition-duration: 300ms;
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+  }
+
+  table {
+    width: screen;
+    text-align: center;
+  }
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    width: screen;
+  }
 }
