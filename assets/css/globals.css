@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+:root {
+  --color-brand: #3d8361;
+  --color-add: #3d8361;
+  --color-add-secondary: #83bca1;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+table {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+thead {
+  background-color: var(--color-brand);
+  color: white;
+  font-weight: 900;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 700px;
+  margin: 1rem;
+}
+
+.button-wrapper button {
+  margin: 0rem 1rem 0rem 0rem;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: var(--color-add);
+  font-family: "Poppins";
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.button-wrapper button:hover {
+  background-color: #38a772;
+}
+
+.button-wrapper button:focus {
+  transition: all;
+  box-shadow: 0 0 0 4px var(--color-add-secondary);
+  transition-duration: 300ms;
+}
+
+.element:hover,
+.deletes:hover,
+.updates:hover {
+  background-color: #eef2e6;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 300ms;
+}

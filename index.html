@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muhamad firly ramadan</title>
   <style>
+
     h3{
       background-image: linear-gradient(to right,#5C258D,green  ) ;
       -webkit-background-clip: text;
@@ -31,6 +32,14 @@
       align-items: center;
       justify-content: center;
     }
+    .links {
+      width: 100%;
+      max-width: 300px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   </style>
 </head>
 <body>
@@ -38,17 +47,11 @@
     <div class="child">
       <img src="https://avatars.githubusercontent.com/u/97083793?v=4" alt="me">
       <h3>Muhamad firly ramadan - 41215734</h3>
-      <button onclick="PindahKeunKaHalamanTable()">Lihat table</button>
+      <div class="links">
+        <a href="./P03/P03_table.html">Simple html css table</a> 
+        <a href="./P03/P03_jquery_table.html">Table with jquery</a> 
+      </div>
     </div>
   </div>
-  <script>
-    function PindahKeunKaHalamanTable() {
-      const yakinNih = confirm("Apakah anda yakin ingin pindah ke halaman table?")
-      if (yakinNih) {
-        return document.location.href = "./P03/P03_table.html"
-      }
-      alert("Batal berpindah halaman, terimakasih sudah memberikan response")
-    }
-  </script>
 </body>
 </html>
