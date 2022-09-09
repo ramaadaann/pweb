@@ -23,6 +23,11 @@ thead {
   font-weight: 900;
 }
 
+td,
+th {
+  padding: 10px;
+}
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -73,19 +78,24 @@ thead {
   transition-duration: 300ms;
 }
 
-@media (max-width: 640px) {
+@media only screen and (max-width: 640px) {
   .wrapper {
     width: 100%;
-    padding: 5rem;
+    margin: 2px;
   }
 
   table {
-    width: 50%;
+    width: 100%;
     text-align: center;
   }
 
+  td,
+  th {
+    padding: 3px;
+  }
+
   .button-wrapper {
-    width: 100%;
+    width: 97%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

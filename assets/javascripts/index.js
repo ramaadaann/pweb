@@ -90,7 +90,7 @@ $(document).ready(() => {
 
     localStorage.setItem("lists", JSON.stringify(DataLists));
     alert("New data hasbeen added.");
-    location.reload();
+    document.location.reload();
   });
 
   $("#body").html(GetDynamicData(DataLists));
@@ -135,7 +135,7 @@ $(document).ready(() => {
       }`
     );
 
-    location.reload();
+    document.location.reload();
   });
 
   $(".deletes").click(function () {
@@ -148,7 +148,7 @@ $(document).ready(() => {
       const FindData = DataLists.filter((name) => name.name != item[0]);
       localStorage.setItem("lists", JSON.stringify(FindData));
       alert(`${item[0]} with address ${item[1]} hasbeen successfully deleted.`);
-      location.reload();
+      document.location.reload();
     };
 
     const isFalse = () => {
@@ -171,6 +171,6 @@ $(document).ready(() => {
 
     alert("Sucsessfully reset table data to default value.");
 
-    location.reload();
+    document.location.reload();
   });
 });
