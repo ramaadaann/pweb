@@ -1,3 +1,10 @@
+/**
+ * Created by Muhamad Firly Ramadan
+ * Instagram: @mframadann
+ * Technical information - Backend Developer
+ * Copy this code? please don't remove this watermark
+ */
+
 const FriendList = [
   {
     name: "Laylatunna'imah",
@@ -69,8 +76,6 @@ $(document).ready(() => {
   $("#AddList").click(() => {
     let name = prompt("Insert your name");
     let address = prompt("Insert your address");
-
-    console.log(name);
 
     if (name == "" || name == null || address == "" || address == null) {
       alert("Sory, name or address cannot be null try again");
