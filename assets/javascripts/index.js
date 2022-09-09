@@ -112,7 +112,8 @@ $(document).ready(() => {
       return false;
     }
 
-    FindData[0].name = NewNameItem == "" ? item[0] : NewNameItem;
+    FindData[0].name =
+      NewNameItem == "" || NewNameItem == null ? item[0] : NewNameItem;
 
     if (isAddressUpdate) {
       let NewAddressItem = prompt("Insert new address");
@@ -126,7 +127,13 @@ $(document).ready(() => {
 
     localStorage.setItem("lists", JSON.stringify(DataLists));
 
-    alert(`Update successfully`);
+    alert(
+      `${
+        FindData[0].name == item[0]
+          ? "No changes detected in this rows"
+          : "Successfully updated"
+      }`
+    );
 
     document.location.href = "../P03/P03_jquery_table.html";
   });
@@ -149,5 +156,21 @@ $(document).ready(() => {
     };
 
     Isdeleted ? IsTrue() : isFalse();
+  });
+
+  $("#reset").click(function () {
+    const isReset = confirm("Are you sure to reset this data to default?");
+
+    if (!isReset) {
+      alert("Cancel reset");
+
+      return false;
+    }
+
+    localStorage.setItem("lists", JSON.stringify(FriendList));
+
+    alert("Sucsessfully reset table data to default value.");
+
+    document.location.href = "../P03/P03_jquery_table.html";
   });
 });
