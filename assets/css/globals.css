@@ -4,6 +4,8 @@
   --color-brand: #3d8361;
   --color-add: #3d8361;
   --color-add-secondary: #83bca1;
+  --color-todo-primary: #171717;
+  --color-todo-secondary: #262626;
 }
 
 body {
@@ -101,4 +103,134 @@ th {
     justify-content: flex-start;
     margin: 1rem;
   }
+}
+
+/* assignment 4 */
+.wrapping {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-todo-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0px 3rem 0px;
+}
+
+.forms {
+  width: 90%;
+  max-width: 600px;
+  height: 50px;
+  background-color: #262626;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.forms input {
+  width: 70%;
+  height: 30px;
+  border-radius: 15px;
+  margin: 6px;
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #1ec01e;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.forms input::placeholder {
+  color: #1ec01e;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.forms input:focus {
+  outline: none;
+}
+
+.forms button {
+  width: 25%;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #1ec01e;
+  border: none;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.forms button:focus {
+  transition: all;
+  box-shadow: 0 0 0 2px #16a34a;
+  transition-duration: 300ms;
+}
+
+.lists {
+  width: 90%;
+  max-width: 600px;
+  height: 100vh;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.todos {
+  width: 100%;
+  height: 50px;
+  color: #1ec01e;
+  font-size: 20px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem 1rem 0rem;
+  background-color: var(--color-todo-secondary);
+  margin: 0.7rem 0rem 0rem 0rem;
+  border-radius: 15px;
+}
+
+.deletes {
+  border: none;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.deletes:focus {
+  background-color: transparent;
+}
+
+.title-todo {
+  align-items: center;
+  font-weight: bolder;
+  color: #1ec01e;
+  font-size: 40px;
+}
+.title-todo a {
+  font-weight: bolder;
+  color: #1ec01e;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.wrap {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.actions {
+  width: 30%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
