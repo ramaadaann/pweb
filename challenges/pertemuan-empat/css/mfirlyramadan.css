@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
+:root {
+  --brand: #61dafb;
+  --brand-secondary: #24b4d8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,11 +21,84 @@
   width: 100%;
   height: auto;
   margin: 1rem 0 1rem;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   line-height: 2.5rem;
   border: 1px solid blue;
 }
 
 .block-forms input {
   width: 80% !important;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  max-width: 640px;
+}
+
+.content-wrapper img,
+h2 {
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.forms {
+  width: 100%;
+  margin: auto;
+  background-color: var(--brand);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.user-inputs,
+select {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.user-inputs[type="file"] {
+  background-color: #fff;
+  border: none;
+  font-size: 12px;
+}
+
+button {
+  width: 100%;
+  background-color: var(--brand-secondary);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid var(--brand-secondary);
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background-color: var(--brand);
+  transition: 0.2s;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .user-inputs,
+  select {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  button {
+    padding: 8px 10px;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 10px;
+  }
 }
