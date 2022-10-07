@@ -17,4 +17,9 @@ $(document).ready(function () {
       alert("Anda mengklik kolom yang berisi : " + $(this).html() + "!");
     }
   });
+
+  $(".toggle").click(function () {
+    // $(".slide-content").toggleClass("disappear");
+    $(".slide-content").slideToggle("slow");
+  });
 });
