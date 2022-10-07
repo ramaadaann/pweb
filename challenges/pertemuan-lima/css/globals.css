@@ -17,25 +17,21 @@ table {
   width: 100%;
   max-width: 900px;
   margin-top: 20px;
+  text-align: center;
 }
 
 th {
   background-color: #3b71fe;
 }
 
+td,
+th {
+  padding: 10px;
+}
+
 td {
   background-color: white;
   color: #2c3639;
-}
-
-td,
-th {
-  border: 1px solid #3b71fe;
-  padding: 8px;
-}
-
-td:first-child {
-  text-align: center;
 }
 
 td:hover {
