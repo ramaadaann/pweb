@@ -22,4 +22,43 @@ $(document).ready(function () {
     // $(".slide-content").toggleClass("disappear");
     $(".slide-content").slideToggle("slow");
   });
+
+  const content = [
+    {
+      name: "Hello 👋, I`am Muhamad Firly Ramadan",
+    },
+    {
+      name: "I am a student and Back End Developer",
+    },
+    {
+      name: "Comming soon ✌",
+    },
+    {
+      name: "Look at your self 😜",
+    },
+  ];
+
+  const contents = content.map((item, i) => {
+    return `
+       <div class="content-menu-${i}">
+         <div class="content-wrapper">
+           <h1 class="content">${item.name}</h1>
+         </div>
+      </div>
+    `;
+  });
+
+  content.map((item, i) => {
+    $(`.${i + 1}`).click(() => {
+      $(`.${i + 1}`).css({ "font-weight": "bold", color: "#3b71fe" });
+      $(`.${i + 1}`)
+        .siblings()
+        .css({ "font-weight": "normal", color: "#262626" });
+
+      $(`.content-menu-${i}`).slideToggle("slow");
+      $(`.content-menu-${i}`).siblings().css("display", "none");
+    });
+  });
+
+  $(".content-menu-wrapper").html(contents);
 });
